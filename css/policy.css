@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f8f3;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #002c3e;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding-left: 0px;
+}
+
+.nav-links li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+}
+
+.nav-links li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+header {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.policy-section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 44, 62, 0.2);
+    text-align: left;
+}
+
+.policy-section h2 {
+    color: #002c3e;
+    font-size: 20px;
+    border-bottom: 2px solid #002c3e;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.policy-section p,
+.policy-section ul {
+    font-size: 16px;
+    color: #333;
+}
+
+.policy-section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.policy-section ul li {
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: #002c3e;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #002c3e;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer_section {
+    width: 30%;
+    padding: 15px;
+}
+
+.footer_section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+
+.footer_section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_section ul li {
+    margin-bottom: 8px;
+}
+
+.footer_section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer_bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}

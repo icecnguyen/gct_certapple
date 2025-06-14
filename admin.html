@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>GCT CertApple</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="nav_icon" src="images/icons/nav_logo.ico" alt="logo">
+        <div class="logo">GCT CertApple</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="cart.html">Giỏ hàng</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="login.html">Đăng Nhập</a></li>
+        </ul>
+    </nav>
+
+    <h1>Quản lý Sản phẩm & Đơn hàng</h1>
+    
+    <h2>Quản lý Sản phẩm</h2>
+    <button onclick="showAddProductForm()">Thêm sản phẩm</button>
+    <div id="product-form" style="display: none;">
+        <input type="text" id="productDevice" placeholder="Dòng thiết bị">
+        <input type="text" id="productName" placeholder="Tên sản phẩm">
+        <input type="text" id="productWait" placeholder="Thời gian chờ">
+        <input type="text" id="productWarranty" placeholder="Bảo hành">
+        <input type="text" id="productUse" placeholder="Thời hạn">
+        <input type="text" id="productPrice" placeholder="Giá">
+        <button id="addProductBtn">Thêm sản phẩm</button>
+    </div>
+
+    <div id="edit-product-form" style="display: none;">
+    <h3>Sửa thông tin sản phẩm</h3>
+    <input type="text" id="editProductDevice" placeholder="Dòng thiết bị">
+    <input type="text" id="editProductName" placeholder="Tên sản phẩm">
+    <input type="text" id="editProductWait" placeholder="Thời gian chờ">
+    <input type="text" id="editProductWarranty" placeholder="Bảo hành">
+    <input type="text" id="editProductUse" placeholder="Thời hạn">
+    <input type="text" id="editProductPrice" placeholder="Giá">
+    <button id="updateProductBtn">Cập nhật sản phẩm</button>
+    <button onclick="hideEditForm()">Hủy</button>
+    </div>
+
+    <table id="product-table">
+        <thead>
+            <tr><th>Tên sản phẩm</th><th>Thời Gian Chờ</th><th>Thời hạn</th><th>Bảo hành</th><th>Giá</th><th>Hành động</th></tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Quản lý Đơn hàng</h2>
+    <table id="order-table">
+        <thead>
+            <tr><th>Sản phẩm</th><th>UDID</th><th>Trạng thái</th><th>Hành động</th></tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
